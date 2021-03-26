@@ -1,0 +1,8 @@
+{
+  "name": "root",
+  "private": true,
+  "description": "A common building block repository",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
