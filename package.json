@@ -7,9 +7,62 @@
     "email": "bryanadamss@foxmail.com"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "commit": "git-cz"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@ls-lint/ls-lint": "^1.9.2",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-standard": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.22.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.8.0",
+    "husky": "^3.1.0",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^4.1.0",
+    "stylelint-selector-bem-pattern": "^2.1.0"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md,html,flow,ts,tsd}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,jsx,vue}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{sass,scss,vue,css,less,stylus}": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "*": [
+      "ls-lint"
+    ]
   }
 }
