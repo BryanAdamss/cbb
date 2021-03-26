@@ -2,6 +2,13 @@
   "name": "root",
   "private": true,
   "description": "A common building block repository",
+  "author": {
+    "name": "GuangHui",
+    "email": "bryanadamss@foxmail.com"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }
