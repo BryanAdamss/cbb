@@ -1,5 +1,5 @@
 /**
- * @author ghchu
+ * @author GuangHui
  * @description preview配置，用于storybook内部或插件识别
  */
 

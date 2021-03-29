@@ -1,15 +1,15 @@
 {
-  "name": "@zy/utils",
+  "name": "@ba/utils",
   "version": "1.0.0",
   "description": "tool methods",
-  "author": "ghchu <ghchu@iflytek.com>",
-  "homepage": "https://git.iflytek.com/EPD_ZXZY/zy-cbb#readme",
+  "author": "GuangHui <bryanadamss@foxmail.com>",
+  "homepage": "https://github.com/BryanAdamss/cbb#readme",
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.umd.js",
   "scripts": {
-    "build": "lerna exec --scope @zy/utils -- rollup -c ../../build/base.js"
+    "build": "lerna exec --scope @ba/utils -- rollup -c ../../build/base.js"
   },
   "directories": {
     "lib": "lib",
@@ -19,13 +19,13 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://artifacts.iflytek.com/artifactory/api/npm/npm-private"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git.iflytek.com/EPD_ZXZY/zy-cbb.git"
+    "url": "git+https://github.com/BryanAdamss/cbb.git"
   },
   "bugs": {
-    "url": "https://git.iflytek.com/EPD_ZXZY/zy-cbb/-/issues"
+    "url": "https://github.com/BryanAdamss/cbb/issues"
   }
 }

@@ -1,11 +1,11 @@
-# `@zy/utils`
+# `@ba/utils`
 
 > TODO: description
 
 ## Usage
 
 ```
-const utils = require('@zy/utils');
+const utils = require('@ba/utils');
 
 // TODO: DEMONSTRATE API
 ```

@@ -3,8 +3,8 @@
   "private": true,
   "description": "A common building block repository",
   "author": {
-    "name": "ghchu",
-    "email": "ghchu@iflytek.com"
+    "name": "GuangHui",
+    "email": "bryanadamss@foxmail.com"
   },
   "workspaces": [
     "packages/*"
