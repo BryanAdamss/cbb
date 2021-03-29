@@ -3,8 +3,8 @@
   "private": true,
   "description": "A common building block repository",
   "author": {
-    "name": "GuangHui",
-    "email": "bryanadamss@foxmail.com"
+    "name": "ghchu",
+    "email": "ghchu@iflytek.com"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
