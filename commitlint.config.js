@@ -1,5 +1,5 @@
 /**
- * @author GuangHui
+ * @author ghchu
  * @description commitlint配置文件
  */
 
