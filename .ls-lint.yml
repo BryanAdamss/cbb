@@ -26,3 +26,4 @@ ignore:
   - .circleci
   - .github
   - .vscode
+  - packages/**/__tests__/*.js
