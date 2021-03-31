@@ -1,9 +1,9 @@
 'use strict'
 
-import { print } from '../src/index.js'
+import { shuffle } from '../src/tools.js'
 
-describe('@ba/utils', () => {
+describe('@ghchu/utils', () => {
   it('should be a function', () => {
-    expect(typeof print === 'function').toBe(true)
+    expect(typeof shuffle === 'function').toBe(true)
   })
 })

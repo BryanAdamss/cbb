@@ -1,5 +1,5 @@
 // Import vue component
-import GhButton from './GhButton.vue'
+import LoadingSpinner from './LoadingSpinner.vue'
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {
@@ -7,7 +7,7 @@ export function install(Vue) {
 
   install.installed = true
   // eslint-disable-next-line vue/match-component-file-name
-  Vue.component('GhButton', GhButton)
+  Vue.component('GhLoadingSpinner', LoadingSpinner)
 }
 
 // Create module definition for Vue.use()
@@ -26,4 +26,4 @@ if (typeof window !== 'undefined') {
 if (GlobalVue) GlobalVue.use(plugin)
 
 // To allow use as module (npm/webpack/etc.) export component
-export default GhButton
+export default LoadingSpinner
